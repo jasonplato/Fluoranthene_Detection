@@ -22,6 +22,10 @@ Since this project is a 2-class classification problem, we use ```linear regress
 We now implemented ```Sigmoid``` activation function and ```cross-entropy``` cost function.  
 We now implemented ```gradient descent``` as our optimization algorithm.
 
+## How to Run
+Just run ```LinearTwoClassClassifier.py```.  
+This file has whole training and testing body codes.
+
 ## Result
 Our machine learning model was proved that it has a ```97%``` balanced accuracy on test dataset.  
 Our experiment confusion matrix is shown in ```cm.jpg```.
