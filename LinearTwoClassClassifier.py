@@ -59,6 +59,7 @@ def gradient_descent(w, x, y, alpha, delta, n_iter):
     plt.title('Cost Function Curve in Training')
     plt.xlabel('Iteration')
     plt.ylabel('Cost Value')
+    plt.savefig('cost_function_curve.jpg', dpi=500)
     plt.show()
     return trained_w
 
