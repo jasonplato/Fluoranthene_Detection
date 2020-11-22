@@ -1,7 +1,9 @@
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-
+import autograd
+from autograd import elementwise_grad
+from autograd import hessian
 from data_process import get_data_set
 from plot_confusion_matrix import plot_Matrix
 
@@ -62,7 +64,22 @@ def gradient_descent(w, x, y, alpha, delta, n_iter):
     plt.savefig('cost_function_curve.jpg', dpi=500)
     plt.show()
     return trained_w
-
+#Newton's Method
+def newton_method(w, x, y, n_iter):
+    
+    cost = lambda trained_w: cross_entropy(trained_w, x, y)
+    gradient = autograd. elementwise_grad(cost)
+    hess = hessian(cost)
+    trained_w = w
+    
+    for k in range(n_iter):
+        grad_val = gradient(trained_w)
+        hess_val = hess(trained_w)
+        hess_val.shape = (int((np. size(hess_val))**(0.5)),int((np.size(hess_val))**(0.5)))
+        A = hess_val
+        b = grad_val
+        trained_w = np.linalg.solve(A, np.dot(A,trained_w)-b)
+    return trained_w
 
 # Train
 train_X, train_Y = get_data_set(0)
