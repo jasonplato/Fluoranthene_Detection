@@ -21,24 +21,24 @@ For dataset details, please check pdf file.
 ## Machine Learning Model
 Since this project is a 2-class classification problem, we use ```linear regression model``` to classify datapoints.
 
-We now implemented ```Sigmoid``` activation function and ```cross-entropy``` cost function.
+We implement ```Sigmoid``` activation function.
 
-We now implemented ```softmax``` cost function.
+We implement ```softmax``` cost function and ```cross-entropy``` cost function.
 
-We now implemented ```gradient descent``` and ```Newton's method``` as our optimization algorithms.
+We implement ```gradient descent``` and ```Newton's method``` as our optimization algorithms.
 
 ## How to Run
-Run ```LinearTwoClassClassifier.py``` or ```LinearTwoClassClassifier_softmax.py``` in python.
+Run ```LinearTwoClassClassifier.py``` or ```LinearTwoClassClassifier_softmax.py``` in python.  
 Run ```Linear_TwoClass_Classifier.m``` in Matlab.
 Those files have whole training and testing body codes.
 
 ## Result
 Our machine learning model was proved that it has a ```97%``` balanced accuracy on test dataset by ```cross-entropy``` cost function.
 Our machine learning model was proved that it has a ```96%``` balanced accuracy on test dataset by ```softmax``` cost function.
-Our experiment confusion matrix is shown in ```cm.jpg``` and ```cm_softmax.jpg```.
+Our experiment confusion matrix is shown in ```cm.jpg```.
 
 ## TODO
-1. Fix some bugs when plotting learning curve in Python. (DONE)
+1. Fix some bugs when plotting learning curve in Python. (Done)
 2. May try Newton's method for optimization. (Done)
 3. May implement linear classifier in Matlab. (Done)
 4. May use some data-preprocess tricks.
