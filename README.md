@@ -3,11 +3,12 @@ UBC Okanagan - ENGR 518 Applied Machine Learning, Group 7
 Yifan Pan, Yirao Zhang, Zhenyu Ma, Xufei Wang
 
 ## Requirement
-### Python (Done)
+### Python Version
 ```numpy```  
 ```pandas```  
 ```matplotlib```
-### Matlab (TODO)
+### Matlab Version  
+
 For project details, please check pdf file.  
 
 ## Dataset Preprocess
@@ -23,14 +24,13 @@ We now implemented ```Sigmoid``` activation function and ```cross-entropy``` cos
 We now implemented ```gradient descent``` as our optimization algorithm.
 
 ## How to Run
-Just run ```LinearTwoClassClassifier.py```.  
-This file has whole training and testing body codes.
+Run ```LinearTwoClassClassifier.py``` in python or ```Linear_TwoClass_Classifier.m``` in Matlab.  
+Those files have whole training and testing body codes.
 
 ## Result
 Our machine learning model was proved that it has a ```97%``` balanced accuracy on test dataset.  
 Our experiment confusion matrix is shown in ```cm.jpg```.
 
 ## TODO
-1. some bugs when plotting learning curve.  
-2. May try Newton method.  
-3. May implement this project in Matlab.
+1. May use some data-preprocess tricks.
+2. May try nonlinear model.
