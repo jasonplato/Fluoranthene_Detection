@@ -21,7 +21,9 @@ For dataset details, please check pdf file.
 ## Machine Learning Model
 Since this project is a 2-class classification problem, we use ```linear regression model``` to classify datapoints.  
 We now implemented ```Sigmoid``` activation function and ```cross-entropy``` cost function.
+
 We now implemented ```softmax``` cost function.
+
 We now implemented ```gradient descent``` and ```Newton's method``` as our optimization algorithms.
 
 ## How to Run
