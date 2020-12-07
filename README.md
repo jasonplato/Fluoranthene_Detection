@@ -8,7 +8,7 @@ Yifan Pan, Yirao Zhang, Zhenyu Ma, Xufei Wang
 ```pandas```  
 ```matplotlib```
 ### Matlab Version  
-
+```Null```  
 For project details, please check pdf file.  
 
 ## Dataset Preprocess
@@ -21,7 +21,7 @@ For dataset details, please check pdf file.
 ## Machine Learning Model
 Since this project is a 2-class classification problem, we use ```linear regression model``` to classify datapoints.  
 We now implemented ```Sigmoid``` activation function and ```cross-entropy``` cost function.  
-We now implemented ```gradient descent``` as our optimization algorithm.
+We now implemented ```gradient descent``` and ```Newton's method``` as our optimization algorithms.
 
 ## How to Run
 Run ```LinearTwoClassClassifier.py``` in python or ```Linear_TwoClass_Classifier.m``` in Matlab.  
@@ -32,5 +32,8 @@ Our machine learning model was proved that it has a ```97%``` balanced accuracy 
 Our experiment confusion matrix is shown in ```cm.jpg```.
 
 ## TODO
+1. Fix some bugs when plotting learning curve in Python. (DONE)
+2. May try Newton's method for optimization. (Done)
+3. May implement linear classifier in Matlab. (Done)
 1. May use some data-preprocess tricks.
 2. May try nonlinear model.
