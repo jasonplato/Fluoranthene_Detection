@@ -8,7 +8,7 @@ Yifan Pan, Yirao Zhang, Zhenyu Ma, Xufei Wang
 ```pandas```  
 ```matplotlib```
 ### Matlab Version  
-```Null```  
+```Null```
 For project details, please check pdf file.  
 
 ## Dataset Preprocess
@@ -35,5 +35,5 @@ Our experiment confusion matrix is shown in ```cm.jpg```.
 1. Fix some bugs when plotting learning curve in Python. (DONE)
 2. May try Newton's method for optimization. (Done)
 3. May implement linear classifier in Matlab. (Done)
-1. May use some data-preprocess tricks.
-2. May try nonlinear model.
+4. May use some data-preprocess tricks.
+5. May try nonlinear model.
